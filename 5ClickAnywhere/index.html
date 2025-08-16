@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dot on clickeddddddd</title>
+    <style>
+      .dot {
+        background-color: red;
+        height: 10px;
+        width: 10px;
+        border-radius: 10px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+      }
+    </style>
+  </head>
+
+  <body style="margin: 0; padding: 0">
+    <div style="height: 100vh; display: flex; cursor: crosshair" id="btn"></div>
+    <!-- onclick="alert(`btn clickeddddddd`)" -->
+  </body>
+  <script>
+    // document.getElementById("btn").onclick = function () {
+    //     alert("btn clicked")
+    // }
+
+    document.getElementById("btn").addEventListener("click", (e) => {
+      console.log(e);
+      const padLeft = e.x;
+      const padRight = e.y;
+
+      let dot = document.createElement("div");
+      dot.className = "dot";
+      dot.style.margin = `${padRight}px ${padLeft}px `;
+      dot.style.backgroundColor = "red";
+
+      document.querySelector("div").appendChild(dot);
+    });
+  </script>
+</html>

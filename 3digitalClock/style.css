@@ -1,0 +1,68 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #ece9e6, #ffffff);
+  color: #333;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  background: #4a90e2;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.links {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.links:hover {
+  color: #ffdd57;
+}
+
+/* Info Section */
+.info {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.info h2 {
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  color: #4a4a4a;
+}
+
+/* Clock Box */
+.clock {
+  padding: 20px;
+  background: #4a90e2;
+  width: 250px;
+  border-radius: 15px;
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+  margin: auto;
+  text-align: center;
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.15);
+  letter-spacing: 2px;
+  transition: transform 0.3s ease;
+}
+
+.clock:hover {
+  transform: scale(1.05);
+}

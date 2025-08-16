@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Number Guessing Mission</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="body">
+    <nav class="navbar">
+      <a href="/" class="links">
+        <div>Home</div>
+      </a>
+      <a href="/" class="links">
+        <div class="link">Other Links</div>
+      </a>
+    </nav>
+    <div class="headingH1">
+      <h1>Guessing Mission</h1>
+      <span
+        >Objective: Identify the secret number <span class="range">(1 - 100)</span></span
+      >
+
+      <form class="heading">
+        <input type="number" id="input" placeholder=" Enter your guess here" />
+        <br />
+        <input type="submit" id="submit" class="submit" />
+      </form>
+      <div>
+        <p class="lowOrHigh resultParas"></p>
+        <p>Attemps remaining: <span class="remaining">10</span></p>
+        <p>Previous guesses: <span class="previous-guess"></span></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
